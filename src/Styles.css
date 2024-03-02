@@ -1,0 +1,659 @@
+ Reset CSS
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2e777a;
+    background-repeat: no-repeat; 
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    transition: background-color 0.3s ease; /* Transition for background color change */
+    /* background: url('https://img.freepik.com/free-photo/top-view-desk-concept-with-gray-background_23-2148236825.jpg?size=626&ext=jpg&ga=GA1.1.87170709.1707782400&semt=ais'); */
+}
+
+/* Utility Classes */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .social-icons {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px 0;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .section {
+        padding: 60px 0;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Add a transition for smoother hover effects */
+.whatsapp {
+transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media only screen and (max-width: 400px) {
+    form {
+        padding: 0 20px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    form textarea {
+        height: 100px;
+    }
+
+    form button {
+        padding: 10px 20px;
+    }
+}
+
+/* Header */
+header {
+    background-color: #0d6b80;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* About, Services, Contact Sections */
+.section {
+    overflow: hidden; /* Hide overflow to prevent scroll bar on sections */
+}
+
+.section h2 {
+    font-size: 2.5rem;
+}
+
+.section p {
+    font-size: 1.1rem;
+}
+
+/* About Section */
+#about {
+    background-color: white;
+}
+
+/* Services Section */
+#services {
+    background-color: white;
+}
+
+#services ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#services ul li {
+    margin: 0 20px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: white;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #333;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form button {
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color:#09414e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .social-icons {
+    margin-top: 20px;
+}
+
+footer .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #ddd;
+}
+/* Additional CSS for Services Section */
+#services {
+padding: 50px 0; /* Add padding to create space around the content */
+background-color: #f9f9f9; /* Change background color */
+}
+
+.container {
+max-width: 1200px; /* Adjust max-width of the container */
+margin: 0 auto; /* Center the container */
+}
+
+table {
+width: 100%;
+margin-bottom: 30px;
+border-collapse: collapse;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+border-radius: 10px; /* Add border radius for rounded corners */
+overflow: hidden; /* Hide overflowing content */
+}
+/* Additional CSS for Services Table */
+table {
+border-collapse: collapse;
+width: 100%;
+margin-top: 20px; /* Add margin on top of the table */
+}
+
+thead th,
+tbody td {
+padding: 15px;
+text-align: left;
+border-bottom: 1px solid #ddd; /* Add border bottom to table rows */
+}
+
+thead th {
+background-color: #333;
+color: #fff;
+}
+
+tbody tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+background-color: #ddd;
+}
+
+/* Hover effect for table rows */
+tbody tr:hover {
+background-color: #f0f0f0;
+transition: background-color 0.3s ease;
+}
+
+/* Style the table headers */
+thead th {
+font-weight: bold;
+text-transform: uppercase;
+}
+
+/* Style the amount column */
+tbody td:last-child {
+font-weight: bold;
+color: #007bff; /* Change color of amount text */
+}
+
+
+th, td {
+padding: 15px;
+text-align: left;
+border-bottom: 1px solid #ddd; /* Add border-bottom to table rows */
+}
+
+thead th {
+background-color: #333; /* Header background color */
+color: #fff; /* Header text color */
+}
+
+tbody tr:nth-child(even) {
+background-color: #f2f2f2; /* Alternate row background color */
+}
+
+tbody tr:hover {
+background-color: #ddd; /* Hover background color */
+}
+
+h2 {
+margin-bottom: 30px; /* Add margin-bottom to the heading */
+}
+
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+/* Additional CSS */
+body {
+font-size: 16px; /* Set default font size */
+}
+
+h1 {
+font-size: 2.5rem; /* Increase size of main headings */
+}
+
+h2 {
+font-size: 2rem; /* Increase size of subheadings */
+}
+
+p {
+font-size: 1.1rem; /* Increase size of paragraphs */
+}
+
+.container {
+padding: 0 20px; /* Add padding to container */
+}
+
+section {
+margin-bottom: 50px; /* Add margin between sections */
+}
+
+nav ul {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+nav ul li {
+margin-right: 20px;
+}
+
+nav ul li:last-child {
+margin-right: 0; /* Remove margin from last item */
+}
+
+footer p {
+margin-bottom: 10px; /* Add margin below footer text */
+}
+
+.social-icons {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.social-icons a {
+margin: 0 10px; /* Add margin between social icons */
+}
+
+/* Hover effect for social icons */
+.social-icons a:hover {
+transform: translateY(-3px); /* Move the icon upward slightly on hover */
+}
+
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    display: none;
+}
+/* Additional CSS for service boxes */
+/* Additional CSS for service boxes */
+
+/* Service box container */
+.service-box {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+/* Individual service box */
+.service {
+background-color: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
+width: calc(33.33% - 40px); /* Adjust width of service boxes */
+transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.service:hover {
+transform: translateY(-5px);
+}
+
+/* Title styling */
+.service h3 {
+font-size: 1.5rem;
+margin-bottom: 10px;
+color: #333; /* Adjust title color */
+text-transform: uppercase; /* Convert title text to uppercase */
+}
+
+/* Description styling */
+.service p {
+margin-bottom: 15px;
+color: #666; /* Adjust text color */
+line-height: 1.5; /* Increase line height for better readability */
+}
+
+/* Price styling */
+.price {
+font-size: 1.2rem;
+font-weight: bold;
+color: #007bff; /* Adjust price color */
+}
+
+/* Add dollar sign before price */
+.price:before {
+content: "₹";
+}
+
+/* Clearfix for service box container */
+.service-box:before,
+.service-box:after {
+content: "";
+display: table;
+}
+
+.service-box:after {
+clear: both;
+}
+
+/* Responsive styles for service boxes */
+@media screen and (max-width: 768px) {
+.service {
+width: calc(50% - 40px); /* Adjust width for smaller screens */
+}
+}
+
+@media screen and (max-width: 480px) {
+.service {
+width: calc(100% - 40px); /* Adjust width for mobile screens */
+}
+}
+
+/* Additional CSS for service box titles */
+.service h3 {
+font-weight: bold; /* Make title text bold */
+}
+
+/* Additional CSS for service box prices */
+.price {
+margin-top: 10px; /* Add margin between description and price */
+}
+
+/* Additional CSS for service box borders */
+.service {
+border: 1px solid #ddd; /* Add border to service boxes */
+}
+
+/* Additional CSS for service box box-shadow */
+.service:hover {
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adjust box-shadow on hover */
+}
+
+#back-to-top:hover {
+    background-color: #555;
+}
+/* WhatsApp Button */
+.whatsapp {
+position: fixed;
+bottom: 80px; /* Adjust position as needed */
+right: 20px; /* Adjust position as needed */
+background-color: #25d366; /* WhatsApp green */
+color: white;
+padding: 10px 20px;
+border-radius: 50%; /* Make it round */
+width: 60px; /* Set width to make it round */
+height: 60px; /* Set height to make it round */
+text-align: center; /* Center text horizontally */
+font-size: 16px;
+z-index: 9999; /* Ensure it's above other elements */
+display: none; /* Initially hidden */
+cursor: pointer; /* Show pointer cursor */
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a raised effect */
+transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transition for background color, transform, and box shadow */
+}
+
+/* WhatsApp Button Hover Effect */
+.whatsapp:hover {
+background-color: #128C7E; /* Darker WhatsApp green on hover */
+transform: translateY(-3px); /* Move button slightly upwards on hover */
+box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+}
+
+/* WhatsApp Button Click Effect */
+.whatsapp:active {
+background-color: #075e54; /* Even darker WhatsApp green when clicked */
+transform: translateY(1px); /* Move button slightly downwards when clicked */
+box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Decrease box shadow when clicked */
+}
+
+/* WhatsApp Icon */
+.whatsapp i {
+font-size: 24px; /* WhatsApp icon size */
+vertical-align: middle; /* Align icon vertically with text */
+}
+
+/* WhatsApp Text */
+.whatsapp span {
+font-weight: bold; /* Make text bold */
+margin-left: 5px; /* Add space between icon and text */
+}
+
+/* Adjust the position for left-handed users */
+.whatsapp.left-handed {
+right: auto; /* Reset the right position */
+left: 20px; /* Adjust position for left-handed users */
+}
+
+/* Make the button always visible, even when scrolling */
+.whatsapp.visible {
+display: block !important; /* Override display property to make it visible */
+}
+
+/* Media query to adjust button size on smaller screens */
+@media (max-width: 768px) {
+.whatsapp {
+font-size: 14px; /* Decrease font size on smaller screens */
+padding: 8px 16px; /* Decrease padding on smaller screens */
+bottom: 60px; /* Adjust position for smaller screens */
+right: 10px; /* Adjust position for smaller screens */
+width: 50px; /* Adjust width for smaller screens */
+height: 50px; /* Adjust height for smaller screens */
+}
+
+/* WhatsApp Icon Size on Smaller Screens */
+.whatsapp i {
+font-size: 20px; /* Decrease WhatsApp icon size on smaller screens */
+}
+
+/* WhatsApp Text Size on Smaller Screens */
+.whatsapp span {
+display: none; /* Hide text on smaller screens */
+}
+}
+
+/* Styles for Font Awesome WhatsApp icon */
+.fa-whatsapp {
+    color: white; /* WhatsApp green */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .fa-whatsapp:hover {
+    color: rgb(0, 166, 255); /* Darker WhatsApp green on hover */
+  }
+  
