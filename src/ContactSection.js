@@ -25,7 +25,7 @@ export const ContactUs = () => {
 
   return (
 <>
-    <div className="contact-form">
+    <div id="contact"className="contact-form">
       <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="user_name" />
@@ -48,7 +48,7 @@ export const ContactUs = () => {
 
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        
+       
         .contact-form label {
           display: block;
           margin-bottom: 5px;
@@ -83,6 +83,7 @@ export const ContactUs = () => {
         .contact-form input[type="submit"]:hover {
           background-color: #0056b3;
         }
+        
       `}</style>
     </div>
     &nbsp;<br/><br/>

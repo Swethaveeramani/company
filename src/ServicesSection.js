@@ -7,10 +7,13 @@ const ServicesSection = () => {
             <div className="container">
                 <h2>Our Services</h2>
                 <div className="service-box">
-                    <div className="service">
-                        <h3>Resume</h3>
+                    <div className="service " >
+                        <div >
+                            <h3 >Resume</h3>
                         <p>A professional resume tailored to your needs.</p>
                         <p className="price">500</p>
+                        </div>
+                        
                     </div>
                     <div className="service">
                         <h3>Portfolio</h3>

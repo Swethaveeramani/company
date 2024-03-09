@@ -3,11 +3,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: url("https://t4.ftcdn.net/jpg/04/96/62/53/360_F_496625322_pAkMsV4Ah12zdQaWJpwperbMU8GlKyM9.jpg");
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #2e777a;
+    background-color: #117799;
     background-repeat: no-repeat; 
     color: #333;
     line-height: 1.6;
@@ -62,6 +63,199 @@ p {
         margin-top: 10px;
     }
 }
+/* Additional CSS for service boxes */
+
+/* Service box container */
+.service-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Individual service box */
+.service {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: calc(33.33% - 40px); /* Adjust width of service boxes */
+    transition: transform 0.3s ease;
+    position: relative; /* Set position to relative */
+}
+
+/* Hover effect */
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+}
+
+/* Title styling */
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333; /* Adjust title color */
+    text-transform: uppercase; /* Convert title text to uppercase */
+}
+
+/* Description styling */
+.service p {
+    margin-bottom: 15px;
+    color: #666; /* Adjust text color */
+    line-height: 1.5; /* Increase line height for better readability */
+}
+
+/* Price styling */
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff; /* Adjust price color */
+}
+
+/* Add dollar sign before price */
+.price:before {
+    content: "₹";
+}
+
+/* Clearfix for service box container */
+.service-box:before,
+.service-box:after {
+    content: "";
+    display: table;
+}
+
+.service-box:after {
+    clear: both;
+}
+
+/* Responsive styles for service boxes */
+@media screen and (max-width: 768px) {
+    .service {
+        width: calc(50% - 40px); /* Adjust width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service {
+        width: calc(100% - 40px); /* Adjust width for mobile screens */
+    }
+}
+
+/* Additional CSS for service box titles */
+.service h3 {
+    font-weight: bold; /* Make title text bold */
+}
+
+/* Additional CSS for service box prices */
+.price {
+    margin-top: 10px; /* Add margin between description and price */
+}
+
+/* Additional CSS for service box borders */
+.service {
+    border: 1px solid #ddd; /* Add border to service boxes */
+}
+
+/* Additional CSS for service box box-shadow */
+.service:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adjust box-shadow on hover */
+}
+
+/* Additional CSS for service boxes */
+/* Service box container */
+.service-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Individual service box */
+.service {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: calc(33.33% - 40px); /* Adjust width of service boxes */
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.service:hover {
+    transform: translateY(-5px);
+}
+
+/* Title styling */
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333; /* Adjust title color */
+    text-transform: uppercase; /* Convert title text to uppercase */
+}
+
+/* Description styling */
+.service p {
+    margin-bottom: 15px;
+    color: #060606; /* Adjust text color */
+    line-height: 1.5; /* Increase line height for better readability */
+}
+
+/* Price styling */
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff; /* Adjust price color */
+}
+
+/* Add dollar sign before price */
+.price:before {
+    content: "₹";
+}
+
+/* Clearfix for service box container */
+.service-box:before,
+.service-box:after {
+    content: "";
+    display: table;
+}
+
+.service-box:after {
+    clear: both;
+}
+
+/* Responsive styles for service boxes */
+@media screen and (max-width: 768px) {
+    .service {
+        width: calc(50% - 40px); /* Adjust width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service {
+        width: calc(100% - 40px); /* Adjust width for mobile screens */
+    }
+}
+
+/* Additional CSS for service box titles */
+.service h3 {
+    font-weight: bold; /* Make title text bold */
+}
+
+/* Additional CSS for service box prices */
+.price {
+    margin-top: 10px; /* Add margin between description and price */
+}
+
+/* Additional CSS for service box borders */
+.service {
+    border: 1px solid #ddd; /* Add border to service boxes */
+}
+
+/* Additional CSS for service box box-shadow */
+.service:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adjust box-shadow on hover */
+}
+
 
 @media only screen and (max-width: 600px) {
     header {
@@ -116,7 +310,7 @@ transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
 /* Header */
 header {
-    background-color: #0d6b80;
+    background-color: #51c2e7;
     color: #fff;
     padding: 20px 0;
     position: fixed;
@@ -240,7 +434,7 @@ form button:hover {
 
 /* Footer */
 footer {
-    background-color:#09414e;
+    background-color:#4baaca;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -476,6 +670,7 @@ transform: translateY(-3px); /* Move the icon upward slightly on hover */
 display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
+
 }
 
 /* Individual service box */
@@ -505,7 +700,7 @@ text-transform: uppercase; /* Convert title text to uppercase */
 /* Description styling */
 .service p {
 margin-bottom: 15px;
-color: #666; /* Adjust text color */
+color: #060606; /* Adjust text color */
 line-height: 1.5; /* Increase line height for better readability */
 }
 
@@ -568,36 +763,18 @@ box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adjust box-shadow on hover */
 #back-to-top:hover {
     background-color: #555;
 }
-/* WhatsApp Button */
-.whatsapp {
-position: fixed;
-bottom: 80px; /* Adjust position as needed */
-right: 20px; /* Adjust position as needed */
-background-color: #25d366; /* WhatsApp green */
-color: white;
-padding: 10px 20px;
-border-radius: 50%; /* Make it round */
-width: 60px; /* Set width to make it round */
-height: 60px; /* Set height to make it round */
-text-align: center; /* Center text horizontally */
-font-size: 16px;
-z-index: 9999; /* Ensure it's above other elements */
-display: none; /* Initially hidden */
-cursor: pointer; /* Show pointer cursor */
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a raised effect */
-transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transition for background color, transform, and box shadow */
-}
+
 
 /* WhatsApp Button Hover Effect */
 .whatsapp:hover {
-background-color: #128C7E; /* Darker WhatsApp green on hover */
+background-color: #07601a; /* Darker WhatsApp green on hover */
 transform: translateY(-3px); /* Move button slightly upwards on hover */
 box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
 }
 
 /* WhatsApp Button Click Effect */
 .whatsapp:active {
-background-color: #075e54; /* Even darker WhatsApp green when clicked */
+background-color: #097037; /* Even darker WhatsApp green when clicked */
 transform: translateY(1px); /* Move button slightly downwards when clicked */
 box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Decrease box shadow when clicked */
 }
@@ -654,6 +831,317 @@ display: none; /* Hide text on smaller screens */
   }
   
   .fa-whatsapp:hover {
-    color: rgb(0, 166, 255); /* Darker WhatsApp green on hover */
+    color: rgb(29, 71, 178); /* Darker WhatsApp green on hover */
   }
   
+  /* Styles for ServicesSection Component */
+
+/* Service Section */
+#services {
+    background-color: #f9f9f9;
+    padding: 100px 0;
+}
+
+/* Service Boxes */
+.service-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Individual Service Box */
+.service {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: calc(25% - 40px); /* Adjust width of service boxes */
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* Description Styling */
+.service p {
+    margin-bottom: 15px;
+    color: #050505;
+    line-height: 1.5;
+}
+
+/* Price Styling */
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Add Rupee Sign */
+.price:before {
+    content: "₹";
+}
+
+
+.service-box:before,
+.service-box:after {
+    content: "";
+    display: table;
+}
+
+.service-box:after {
+    clear: both;
+}
+
+/* Responsive Styles for Service Boxes */
+@media screen and (max-width: 768px) {
+    .service {
+        width: calc(50% - 40px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service {
+        width: calc(100% - 40px);
+    }
+}
+
+/* Additional Styling for Service Box Titles */
+.service h3 {
+    font-weight: bold;
+    color: #130557; /* Change title color on hover */
+}
+/* Additional Styling for Service Box Titles */
+.container h2 {
+    font-weight: bold;
+    color: #130557; /* Change title color on hover */
+}
+
+
+/* Additional Styling for Service Box Prices */
+.price {
+    margin-top: 10px;
+    color: #130557;
+}
+
+/* Additional Styling for Service Box Borders */
+.service {
+    border: 1px solid #ddd;
+}
+
+/* Additional Styling for Service Box Box-Shadow */
+.service:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #f2f2f2; /* Change background color on hover */
+    cursor: pointer; /* Add pointer cursor on hover */
+} 
+/* Header */
+header {
+    background-color: #51c2e7;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Styles.css */
+
+/* Style for the logo */
+.logo {
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Add some space below the logo */
+  }
+  
+  .container h1 {
+    font-size: 36px; /* Set the font size */
+    color: #fdfcfc; /* Set the text color */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Add letter spacing */
+    font-weight: bold; /* Make the text bold */
+    margin: 0; /* Remove default margins */
+  }
+  
+  .container h1::after {
+    content: ""; /* Add content after the text */
+    display: block; /* Display as block */
+    width: 50px; /* Set width */
+    height: 3px; /* Set height */
+    background-color: #faf8f8; /* Set background color */
+    margin: 10px auto; /* Center horizontally and add space */
+  }
+  /* Styles.css */
+
+/* Style for navigation links */
+.page {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .page a {
+    text-decoration: none;
+    color: #fbf9f9; /* Set the text color */
+    font-size: 18px; /* Set the font size */
+    font-weight: bold; /* Make the text bold */
+    transition: color 0.3s ease; /* Add transition for color change */
+  }
+  
+  .page a:hover {
+    color: rgb(4, 55, 113); /* Change color on hover */
+  }
+  /* Styles.css */
+
+.context {
+    font-size: 18px; /* Set the font size for the paragraph */
+    color: #666; /* Set the text color */
+    line-height: 1.6; /* Set the line height */
+    text-align: justify; /* Justify the text */
+    margin-top: 20px; /* Add some space above the paragraph */
+  }
+  @media (max-width: 768px) {
+    .page {
+      margin: 10px 0;
+    }
+  }  
+  .page {
+    margin-left: 10px;
+  }
+  /* Styles.css */
+
+/* Default styles for AboutSection */
+.section {
+    padding: 50px 0; /* Adjust as needed */
+  }
+  
+  .container {
+    text-align: center; /* Center the content */
+  }
+  
+  .about {
+    margin-bottom: 200px; /* Add margin at the bottom of the heading */
+  }
+  
+  .context {
+    margin-bottom: 20px; /* Add margin at the top of the paragraph */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .section {
+      padding: 30px 0; /* Reduce padding on smaller screens */
+    }
+  
+    .about {
+      font-size: 24px; /* Reduce font size of the heading on smaller screens */
+      margin-bottom: 200px; /* Reduce margin-bottom of the heading on smaller screens */
+    }
+  
+    .context {
+      font-size: 14px; /* Reduce font size of the paragraph on smaller screens */
+      margin-top: 10px; /* Reduce margin-top of the paragraph on smaller screens */
+    }
+  }
+  /* Custom CSS for Carousel */
+.carousel {
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+  }
+  
+  .carousel-item img {
+    height: 500px; /* Adjust height as needed */
+    object-fit: cover;
+    width:100%
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    padding: 20px;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .carousel-caption p {
+    font-size: 16px;
+  }
+  /* Styles.css */
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for captions */
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .carousel-caption p {
+    font-size: 16px;
+    color: white;
+  }
+ /* Styles.css */
+
+.service {
+    background-color: #f0f0f0; /* Default background color */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .service:hover {
+    background-color: #70bdd7; /* New background color on hover */
+  }
+ 
+ 

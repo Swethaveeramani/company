@@ -5,8 +5,8 @@ import AboutSection from './AboutSection';
 import ServicesSection from './ServicesSection';
 import ContactSection from './ContactSection';
 import Footer from './Footer';
-import WhatsAppButton from './WhatsAppButton';
 import './Styles.css'; // Import your CSS file
+import Slider from './Slider';
 
 function App() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -37,11 +37,10 @@ function App() {
     <>
     <div>
       <Header />
-      <AboutSection />
+      <Slider/>
       <ServicesSection />
       <ContactSection />
       <Footer />
-      <WhatsAppButton />
       {showBackToTop && <div id="back-to-top" onClick={scrollToTop}>&#8679;</div>}
     </div>
     </>

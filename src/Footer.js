@@ -4,6 +4,7 @@ import { faGithub, faFacebookF, faInstagram, faLinkedinIn } from '@fortawesome/f
 
 const Footer = () => {
     return (
+        <>
         <footer>
             <div className="container">
                 <p>&copy; 2024 Startup Company. All rights reserved.</p>
@@ -16,7 +17,12 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
+        <br/>
+        <br/>&nbsp;
+        &nbsp;&nbsp;
+        </>
     );
 }
 
 export default Footer;
+ 
