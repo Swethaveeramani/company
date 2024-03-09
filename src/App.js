@@ -37,6 +37,7 @@ function App() {
     <>
     <div>
       <Header />
+      <br/><br/><br/>
       <Slider/>
       <ServicesSection />
       <ContactSection />

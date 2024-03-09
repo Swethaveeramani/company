@@ -7,7 +7,7 @@ const Footer = () => {
         <>
         <footer>
             <div className="container">
-                <p>&copy; 2024 Startup Company. All rights reserved.</p>
+                <p>&copy; 2024 ProFuturix. All rights reserved.</p>
                 <div className="social-icons">
                     {/* Replace the Twitter icon with the Facebook icon */}
                     <a href="https://github.com/Swethaveeramani" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
@@ -17,9 +17,6 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
-        <br/>
-        <br/>&nbsp;
-        &nbsp;&nbsp;
         </>
     );
 }

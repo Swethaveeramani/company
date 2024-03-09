@@ -13,9 +13,10 @@ function Header() {
       <nav>
         <div className="container">
           {/* Use the img tag to display the image */}
-          <img src={logoImage} alt="ProFuturix Logo" width='80px' height='80px' />
+          {/* <img src={logoImage} alt="ProFuturix Logo" width='70px' height='70px' /> */}
           <h1>ProFuturix</h1>
           <ul>
+
             <li className='page'><a href="#about">About</a></li>
             <li className='page'><a href="#services">Services</a></li>
             <li className='page'><a href="#contact">Contact</a></li>

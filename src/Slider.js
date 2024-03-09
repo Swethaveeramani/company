@@ -19,7 +19,7 @@ function DarkVariantExample() {
         />
         <Carousel.Caption>
           <h5>ProFuturix</h5>
-          <p>At our company, we specialize in providing comprehensive solutions to empower your career journey. From crafting professional resumes and portfolios to developing cutting-edge frontend applications, we are dedicated to helping you stand out and succeed in today's competitive landscape.</p>
+          <p>We specialize in empowering your career journey with comprehensive solutions, from professional resumes to cutting-edge frontend applications.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -30,7 +30,7 @@ function DarkVariantExample() {
         />
         <Carousel.Caption>
           <h5>ProFuturix</h5>
-          <p>At our company, we specialize in providing comprehensive solutions to empower your career journey. From crafting professional resumes and portfolios to developing cutting-edge frontend applications, we are dedicated to helping you stand out and succeed in today's competitive landscape.</p>
+          <p>We specialize in empowering your career journey with comprehensive solutions, from professional resumes to cutting-edge frontend applications.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -42,7 +42,7 @@ function DarkVariantExample() {
         <Carousel.Caption>
           <h5>ProFuturix</h5>
           <p>
-          At our company, we specialize in providing comprehensive solutions to empower your career journey. From crafting professional resumes and portfolios to developing cutting-edge frontend applications, we are dedicated to helping you stand out and succeed in today's competitive landscape.
+          We specialize in empowering your career journey with comprehensive solutions, from professional resumes to cutting-edge frontend applications.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
