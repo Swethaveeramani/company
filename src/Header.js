@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'; // Import the WhatsApp icon from Font Awesome
 
 // Import your image
-import logoImage from '../src/img/Profuturix.png';
+import logoImage from '../src/img/New.png';
 
 function Header() {
   return (
@@ -13,7 +13,7 @@ function Header() {
       <nav>
         <div className="container">
           {/* Use the img tag to display the image */}
-          {/* <img src={logoImage} alt="ProFuturix Logo" width='70px' height='70px' /> */}
+          {/* <img src={logoImage} alt="ProFuturix Logo" width='150px' height='150px' /> */}
           <h1>ProFuturix</h1>
           <ul>
 

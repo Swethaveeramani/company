@@ -11,9 +11,8 @@ const Footer = () => {
                 <div className="social-icons">
                     {/* Replace the Twitter icon with the Facebook icon */}
                     <a href="https://github.com/Swethaveeramani" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
-                    <a href="https://www.facebook.com/profile.php?id=100058701792156&sk=about" target="_blank"><FontAwesomeIcon icon={faFacebookF} /></a>
-                    <a href="https://www.instagram.com/swetha_270311?igsh=MTB6djY0czVlejcxZw==" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
-                    <a href="https://www.linkedin.com/in/swetha-v-b705a9244/" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                    <a href="https://www.instagram.com/profuturix?igsh=MTVxcTFuenUxeXkwbw==" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
+                    <a href="https://www.linkedin.com/in/profuturix-company-a87a202b9/" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} /></a>
                 </div>
             </div>
         </footer>
